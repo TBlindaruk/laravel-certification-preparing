@@ -23,7 +23,7 @@ services:
   mysql:
     image: mysql
     ports:
-      - '3306:3306'
+      - '127.0.0.4:3308:3306'
     environment:
       - MYSQL_ROOT_PASSWORD=secret
       - MYSQL_DATABASE=laravel-blog
@@ -51,7 +51,7 @@ services:
   redis:
     image: redis
     ports:
-      - '6379:6379'
+      - '127.0.0.4:6379:6379'
 
   echo-server:
     image: node
