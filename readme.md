@@ -1,5 +1,9 @@
 ### Course project for docker
 
+#### Project run 
+```
+$ docker-domposer up -d
+```
 #### Status check
 ```
 $ docker-domposer ps
