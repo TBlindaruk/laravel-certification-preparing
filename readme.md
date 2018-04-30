@@ -10,4 +10,4 @@ $ docker-domposer ps
 $ docker exec -ti <CONTAINER_NAME> bash 
 ```
 
-`CONTAINER_NAME` for server = `courseprojectdocker_blog-server_1`
+`CONTAINER_NAME` for server = `courseprojectdocker_todo-server_1`

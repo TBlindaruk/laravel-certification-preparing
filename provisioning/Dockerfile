@@ -1,5 +1,5 @@
 FROM php:7.2-fpm
-LABEL maintainer="hello@guillaumebriday.fr"
+LABEL maintainer="t.blindaruk@gmail.com"
 
 # Installing dependencies
 RUN apt-get update && apt-get install -y \

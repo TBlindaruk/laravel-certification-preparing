@@ -1,9 +1,9 @@
 version: '3'
 
 services:
-  blog-server:
+  todo-server:
     build: ./provisioning
-    image: laravel-blog
+    image: laravel-todo
     depends_on:
       - mysql
       - mysql-test
@@ -13,7 +13,7 @@ services:
 
   queue-server:
     build: ./provisioning
-    image: laravel-blog
+    image: laravel-todo
     command: php artisan queue:work
     depends_on:
       - mysql
@@ -26,7 +26,7 @@ services:
       - '127.0.0.4:3308:3306'
     environment:
       - MYSQL_ROOT_PASSWORD=secret
-      - MYSQL_DATABASE=laravel-blog
+      - MYSQL_DATABASE=laravel-todo
     volumes:
       - ./storage/tmp/db:/var/lib/mysql:cached
 
@@ -46,7 +46,7 @@ services:
       - ./provisioning/nginx.conf:/etc/nginx/conf.d/default.conf:cached
       - ./public:/application/public:cached
     depends_on:
-      - blog-server
+      - todo-server
 
   redis:
     image: redis
@@ -62,5 +62,5 @@ services:
       - .:/application:cached
     depends_on:
       - redis
-      - blog-server
+      - todo-server
     command: 'npm start'
