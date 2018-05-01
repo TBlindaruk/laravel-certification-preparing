@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1921154ed0d1e38a8507987db4859dcf",
-    "content-hash": "d5bca48e56bbf3a25645858fcab9c285",
+    "hash": "486eb68a21d37011ec33f92dbc985d4c",
+    "content-hash": "f004811171c473132e51fc6b4c40f350",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -739,6 +739,61 @@
                 "storage"
             ],
             "time": "2018-04-06 09:58:14"
+        },
+        {
+            "name": "maksi/laravel-idea-type-hinting",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TBlindaruk/laravel-idea-type-hinting.git",
+                "reference": "87caec5c4662160d7ceeef3b94da8122233bcd09"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TBlindaruk/laravel-idea-type-hinting/zipball/87caec5c4662160d7ceeef3b94da8122233bcd09",
+                "reference": "87caec5c4662160d7ceeef3b94da8122233bcd09",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~7.0|~7.1|~7.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Maksi\\TypeHinting\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": ":Tetiana Blindaruk",
+                    "email": "t.blindaruk@gmail.com",
+                    "homepage": "https://www.linkedin.com/in/tetiana-blindaruk-a34b79b1/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Better type hinting for eloquent models",
+            "homepage": "https://github.com/TBlindaruk/laravel-idea-type-hinting",
+            "keywords": [
+                "eloquent",
+                "hinting",
+                "idea",
+                "laravel",
+                "makssiis",
+                "model",
+                "models",
+                "phpstorm",
+                "type"
+            ],
+            "time": "2018-03-31 13:07:42"
         },
         {
             "name": "monolog/monolog",
