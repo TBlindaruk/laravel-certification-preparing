@@ -33,3 +33,8 @@ But, this won't clear the configuration cache. To do that you need to use
 ```
 $ php artisan config:clear  
 ```
+
+## Certification question
+https://laravel.com/certification/prepare/
+
+[certification topics with explanation](./documentation/certification.md)
