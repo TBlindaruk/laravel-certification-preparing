@@ -1,0 +1,201 @@
+{
+	"info": {
+		"name": "TODO",
+		"_postman_id": "ca9f0a8f-6bd3-e114-3062-f6aa414ca05f",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "index",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "{{url}}/api/task",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"task"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "store",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"title\":\"title\",\n\"description\":\"description\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/task",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"task"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "store validation",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\":[\"asd\"]\n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/task",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"task"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "store validation 1",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/task",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"task"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "show",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/task/10",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"task",
+						"10"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\":\"stri234234n123g\",\n\t\"desc\":\"asd\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/task/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"task",
+						"1"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/task/1",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"task",
+						"1"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		}
+	]
+}
