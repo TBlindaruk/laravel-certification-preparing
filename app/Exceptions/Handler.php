@@ -5,7 +5,14 @@ namespace App\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Http\JsonResponse;
+use Illuminate\Http\Response;
 
+/**
+ * Class Handler
+ *
+ * @package App\Exceptions
+ */
 class Handler extends ExceptionHandler
 {
     /**
@@ -32,13 +39,16 @@ class Handler extends ExceptionHandler
      *
      * This is a great spot to send exceptions to Sentry, Bugsnag, etc.
      *
-     * @param  \Exception $exception
+     * @param Exception $exception
+     *
+     * @return mixed|void
+     * @throws Exception
      *
      * @return void
      */
     public function report(Exception $exception)
     {
-        if(!$exception instanceof ApiValidationException){
+        if (!$exception instanceof ApiValidationException) {
             parent::report($exception);
         }
     }
@@ -46,13 +56,17 @@ class Handler extends ExceptionHandler
     /**
      * Render an exception into an HTTP response.
      *
-     * @param  \Illuminate\Http\Request $request
-     * @param  \Exception               $exception
+     * @param \Illuminate\Http\Request $request
+     * @param Exception                $exception
      *
-     * @return \Illuminate\Http\Response
+     * @return \Symfony\Component\HttpFoundation\Response|static
      */
     public function render($request, Exception $exception)
     {
+        if ($exception instanceof NotFoundHttpException) {
+            return JsonResponse::create(['error' => 'route do not exist'], Response::HTTP_NOT_FOUND);
+        }
+        
         return parent::render($request, $exception);
     }
 }

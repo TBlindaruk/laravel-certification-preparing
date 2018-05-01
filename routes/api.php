@@ -11,4 +11,4 @@
 |
 */
 
-Route::resource('task', 'TaskController')->only(['index', 'store', 'show', 'update', 'destroy']);
+Route::apiResource('task', 'TaskController');
