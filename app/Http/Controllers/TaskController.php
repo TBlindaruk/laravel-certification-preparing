@@ -36,13 +36,14 @@ class TaskController extends BaseController
      */
     public function store(TaskStoreRequest $request)
     {
-        $task = new Task();
-        $task->title = $request->get('title');
-        $task->description = $request->get('description');
-        
-        $task->save();
-        
-        return new TaskResource($task);
+        return new TaskResource(
+            Task::create(
+                [
+                    'title'       => $request->get('title'),
+                    'description' => $request->get('description'),
+                ]
+            )
+        );
     }
     
     /**
@@ -63,15 +64,7 @@ class TaskController extends BaseController
      */
     public function update(TaskUpdateRequest $request, Task $task)
     {
-        // fixme
-        // it will be better to do this in other way
-        if ($request->has('title')) {
-            $task->title = $request->get('title');
-        }
-        if ($request->has('description')) {
-            $task->description = $request->get('description');
-        }
-        
+        $task->fill($request->only(['title', 'description']));
         $task->save();
         
         return new TaskResource($task);
@@ -88,6 +81,6 @@ class TaskController extends BaseController
         $taskId = $task->id;
         $task->delete();
         
-        return Response::create([sprintf('Task with %s successfully delete', $taskId)]);
+        return Response::create([sprintf('Task with id %s successfully delete', $taskId)]);
     }
 }

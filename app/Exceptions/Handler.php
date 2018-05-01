@@ -21,7 +21,8 @@ class Handler extends ExceptionHandler
      * @var array
      */
     protected $dontReport = [
-        //
+        ApiValidationException::class,
+        NotFoundHttpException::class,
     ];
     
     /**
@@ -48,9 +49,7 @@ class Handler extends ExceptionHandler
      */
     public function report(Exception $exception)
     {
-        if (!$exception instanceof ApiValidationException) {
-            parent::report($exception);
-        }
+        parent::report($exception);
     }
     
     /**
@@ -63,6 +62,8 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
+        // Fixme:
+        // please fix this code
         if ($exception instanceof NotFoundHttpException) {
             return JsonResponse::create(['error' => 'route do not exist'], Response::HTTP_NOT_FOUND);
         }
