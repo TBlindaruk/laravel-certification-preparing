@@ -3,6 +3,7 @@ declare(strict_types = 1);
 
 namespace App\Model;
 
+use Illuminate\Support\Carbon;
 use Maksi\TypeHinting\Database\Eloquent\Model;
 
 /**
@@ -11,6 +12,8 @@ use Maksi\TypeHinting\Database\Eloquent\Model;
  * @property-read int|null $id
  * @property string        $title
  * @property string        $description
+ * @property Carbon        $created_at
+ * @property Carbon        $updated_at
  *
  * @package App\Model
  */
