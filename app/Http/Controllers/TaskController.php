@@ -75,9 +75,8 @@ class TaskController extends BaseController
      */
     public function destroy(Task $task)
     {
-        $taskId = $task->id;
         $task->delete();
         
-        return Response::create([sprintf('Task with id %s successfully delete', $taskId)]);
+        return Response::create([sprintf('Task with id %s successfully delete', $task->id)]);
     }
 }
