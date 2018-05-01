@@ -38,7 +38,9 @@ class Handler extends ExceptionHandler
      */
     public function report(Exception $exception)
     {
-        parent::report($exception);
+        if(!$exception instanceof ApiValidationException){
+            parent::report($exception);
+        }
     }
     
     /**
