@@ -8,7 +8,6 @@ use App\Http\Requests\Task\TaskUpdateRequest;
 use App\Http\Resources\TaskCollectionResource;
 use App\Http\Resources\TaskResource;
 use App\Model\Task;
-use App\Repository\TaskRepository;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller as BaseController;
 
@@ -20,13 +19,11 @@ use Illuminate\Routing\Controller as BaseController;
 class TaskController extends BaseController
 {
     /**
-     * @param TaskRepository $taskRepository
-     *
      * @return TaskCollectionResource
      */
-    public function index(TaskRepository $taskRepository)
+    public function index()
     {
-        return new TaskCollectionResource($taskRepository->getAll());
+        return new TaskCollectionResource(Task::paginate());
     }
     
     /**
