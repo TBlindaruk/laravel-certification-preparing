@@ -3,6 +3,7 @@ version: '3'
 services:
   todo-server:
     build: ./provisioning
+    container_name: todo-server
     image: laravel-todo
     depends_on:
       - mysql
@@ -22,8 +23,9 @@ services:
 
   mysql:
     image: mysql
+    container_name: todo-mysql
     ports:
-      - '127.0.0.4:3308:3306'
+      - '3306:3306'
     environment:
       - MYSQL_ROOT_PASSWORD=secret
       - MYSQL_DATABASE=laravel-todo

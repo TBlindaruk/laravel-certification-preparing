@@ -3,7 +3,11 @@ declare(strict_types = 1);
 
 namespace App\Providers;
 
+use App\Exceptions\NotFoundHttpException;
+use App\Model\Task;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
+use Illuminate\Http\Response;
+use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Route;
 
 /**
@@ -32,6 +36,18 @@ class RouteServiceProvider extends ServiceProvider
         //
         
         parent::boot();
+        
+        /**
+         * @var Router $router
+         */
+        $router = $this->app->make('router');
+        $router->model(
+            'task',
+            Task::class,
+            function () {
+                throw new NotFoundHttpException(Response::HTTP_NOT_FOUND);
+            }
+        );
     }
     
     /**
@@ -42,24 +58,6 @@ class RouteServiceProvider extends ServiceProvider
     public function map()
     {
         $this->mapApiRoutes();
-        
-        $this->mapWebRoutes();
-        
-        //
-    }
-    
-    /**
-     * Define the "web" routes for the application.
-     *
-     * These routes all receive session state, CSRF protection, etc.
-     *
-     * @return void
-     */
-    protected function mapWebRoutes()
-    {
-        Route::middleware('web')
-            ->namespace($this->namespace)
-            ->group(base_path('routes/web.php'));
     }
     
     /**
