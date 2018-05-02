@@ -7,7 +7,7 @@
 
 #### Architecture
  - [Request Lifecycle](./certification/architecture/1-request-lifecycle.md)
- - Service Container Binding and Resolution
+ - [Service Container Binding and Resolution](./certification/architecture/2-service-container-binding-and-resolution.md)
  - Service Providers
  - Facades
  - HTTP Verbs
