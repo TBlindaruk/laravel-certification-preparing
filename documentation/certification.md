@@ -6,7 +6,7 @@
  - Autoloading Standards
 
 #### Architecture
- - Request Lifecycle
+ - [Request Lifecycle](./certification/architecture/1-request-lifecycle.md)
  - Service Container Binding and Resolution
  - Service Providers
  - Facades
