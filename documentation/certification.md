@@ -13,7 +13,7 @@
  - HTTP Verbs
 
 #### Routing
- - Redirects
+ - [Redirects](./routing/1-redirects.md) `@need_practice` 
  - Route Parameters
  - Named Routes
  - [Route Groups](./certification/routing/4-route-groups.md)
