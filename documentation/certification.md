@@ -14,7 +14,7 @@
 
 #### Routing
  - [Redirects](./routing/1-redirects.md) `@need_practice` 
- - Route Parameters
+ - [Route Parameters](./routing/2-route-parameters.md)
  - Named Routes
  - [Route Groups](./certification/routing/4-route-groups.md)
  - Route Model Binding
