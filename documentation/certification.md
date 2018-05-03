@@ -9,7 +9,7 @@
  - [Request Lifecycle](./certification/architecture/1-request-lifecycle.md)
  - [Service Container Binding and Resolution](./certification/architecture/2-service-container-binding-and-resolution.md)
  - [Service Providers](./certification/architecture/3-service-providers.md)
- - Facades
+ - [Facades](./certification/architecture/4-facades.md)
  - HTTP Verbs
 
 #### Routing
