@@ -13,12 +13,12 @@
  - HTTP Verbs
 
 #### Routing
- - [Redirects](./routing/1-redirects.md) `@need_practice` 
- - [Route Parameters](./routing/2-route-parameters.md)
- - [Named Routes](./routing/3-named-routes.md) `@need_repeat`
+ - [Redirects](./certification/routing/1-redirects.md) `@need_practice` 
+ - [Route Parameters](./certification/routing/2-route-parameters.md)
+ - [Named Routes](./certification/routing/3-named-routes.md) `@need_repeat`
  - [Route Groups](./certification/routing/4-route-groups.md)
  - Route Model Binding
- - [Rate Limiting](./routing/6-rate-limiting.md)
+ - [Rate Limiting](./certification/routing/6-rate-limiting.md)
 
 #### Middleware
  - Defining / Registering Middleware
