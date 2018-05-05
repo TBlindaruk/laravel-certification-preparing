@@ -32,7 +32,7 @@
  - [Middleware](https://laravel.com/docs/5.6/controllers#controller-middleware)
  - [Resource Controllers](https://laravel.com/docs/5.6/controllers#resource-controllers)
  - [Dependency Injection](https://laravel.com/docs/5.6/controllers#dependency-injection-and-controllers)
- - Route Caching
+ - [Route Caching](https://laravel.com/docs/5.6/controllers#route-caching)
 
 #### Requests
  - PSR-7 Requests
