@@ -18,7 +18,7 @@
  - Named Routes
  - Route Groups
  - Route Model Binding
- - Rate Limiting
+ - [Rate Limiting](./routing/6-rate-limiting.md)
 
 #### Middleware
  - Defining / Registering Middleware
