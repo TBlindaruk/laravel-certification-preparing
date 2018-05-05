@@ -25,9 +25,10 @@
  - Middleware Parameters
  
 #### Controllers
- - Defining Controllers
- - Controller Namespacing
- - Single Action Controllers
+ - [Basic Controllers](https://laravel.com/docs/5.6/controllers#basic-controllers)
+    - Defining Controllers
+    - Controller Namespacing
+    - Single Action Controllers
  - Middleware
  - Resource Controllers
  - Dependency Injection
