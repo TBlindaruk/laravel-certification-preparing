@@ -17,7 +17,7 @@
  - [Route Parameters](./certification/routing/2-route-parameters.md)
  - [Named Routes](./certification/routing/3-named-routes.md) `@need_repeat`
  - [Route Groups](./certification/routing/4-route-groups.md)
- - Route Model Binding
+ - [Route Model Binding](./certification/routing/5-route-model-binding.md)
  - [Rate Limiting](./certification/routing/6-rate-limiting.md)
 
 #### Middleware
