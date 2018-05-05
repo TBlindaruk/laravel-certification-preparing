@@ -30,7 +30,7 @@
     - Controller Namespacing
     - Single Action Controllers
  - [Middleware](https://laravel.com/docs/5.6/controllers#controller-middleware)
- - Resource Controllers
+ - [Resource Controllers](https://laravel.com/docs/5.6/controllers#resource-controllers)
  - Dependency Injection
  - Route Caching
 
