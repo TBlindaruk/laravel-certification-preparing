@@ -1,20 +1,20 @@
 <?php
 declare(strict_types = 1);
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Api;
 
 use App\Http\Requests\Task\TaskStoreRequest;
 use App\Http\Requests\Task\TaskUpdateRequest;
 use App\Http\Resources\TaskCollectionResource;
 use App\Http\Resources\TaskResource;
 use App\Model\Task;
-use Illuminate\Http\Response;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Routing\Controller as BaseController;
 
 /**
  * Class TaskController
  *
- * @package App\Http\Controllers
+ * @package App\Http\Controllers\Api
  */
 class TaskController extends BaseController
 {
@@ -70,13 +70,13 @@ class TaskController extends BaseController
     /**
      * @param Task $task
      *
-     * @return Response
+     * @return JsonResponse
      * @throws \Exception
      */
     public function destroy(Task $task)
     {
         $task->delete();
         
-        return Response::create([sprintf('Task with id %s successfully delete', $task->id)]);
+        return JsonResponse::create([sprintf('Task with id %s successfully delete', $task->getOriginal('id'))]);
     }
 }

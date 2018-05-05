@@ -18,28 +18,13 @@ use Illuminate\Support\Facades\Route;
 class RouteServiceProvider extends ServiceProvider
 {
     /**
-     * This namespace is applied to your controller routes.
-     *
-     * In addition, it is set as the URL generator's root namespace.
-     *
-     * @var string
-     */
-    protected $namespace = 'App\Http\Controllers';
-    
-    /**
      * Define your route model bindings, pattern filters, etc.
      *
      * @return void
      */
     public function boot()
     {
-        //
-        
-        parent::boot();
-        
-        /**
-         * @var Router $router
-         */
+        /** @var Router $router */
         $router = $this->app->make('router');
         $router->model(
             'task',
@@ -48,6 +33,8 @@ class RouteServiceProvider extends ServiceProvider
                 throw new NotFoundHttpException(Response::HTTP_NOT_FOUND);
             }
         );
+        
+        parent::boot();
     }
     
     /**
@@ -71,7 +58,7 @@ class RouteServiceProvider extends ServiceProvider
     {
         Route::prefix('api')
             ->middleware('api')
-            ->namespace($this->namespace)
+            ->namespace('App\Http\Controllers\Api')
             ->group(base_path('routes/api.php'));
     }
 }

@@ -30,6 +30,7 @@ class Kernel extends HttpKernel
         'api' => [
             \App\Http\Middleware\JsonMiddleware::class,
             'throttle:30,1',
+            'bindings',
         ],
     ];
     
@@ -42,5 +43,6 @@ class Kernel extends HttpKernel
      */
     protected $routeMiddleware = [
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+        'bindings' => \Illuminate\Routing\Middleware\SubstituteBindings::class,
     ];
 }

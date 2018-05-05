@@ -16,7 +16,7 @@
  - Redirects
  - Route Parameters
  - Named Routes
- - Route Groups
+ - [Route Groups](./certification/routing/4-route-groups.md)
  - Route Model Binding
  - [Rate Limiting](./routing/6-rate-limiting.md)
 
