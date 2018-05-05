@@ -31,7 +31,7 @@
     - Single Action Controllers
  - [Middleware](https://laravel.com/docs/5.6/controllers#controller-middleware)
  - [Resource Controllers](https://laravel.com/docs/5.6/controllers#resource-controllers)
- - Dependency Injection
+ - [Dependency Injection](https://laravel.com/docs/5.6/controllers#dependency-injection-and-controllers)
  - Route Caching
 
 #### Requests
