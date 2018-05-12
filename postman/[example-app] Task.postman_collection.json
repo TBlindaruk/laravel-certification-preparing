@@ -1,6 +1,6 @@
 {
 	"info": {
-		"name": "TODO",
+		"name": "[example-app] Task",
 		"_postman_id": "ca9f0a8f-6bd3-e114-3062-f6aa414ca05f",
 		"description": "",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
@@ -125,14 +125,14 @@
 					"raw": "{\n\t\n}"
 				},
 				"url": {
-					"raw": "{{url}}/api/task/10",
+					"raw": "{{url}}/api/task/30",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"api",
 						"task",
-						"10"
+						"30"
 					]
 				},
 				"description": null
@@ -151,17 +151,17 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n\t\"title\":\"stri234234n123g\",\n\t\"desc\":\"asd\"\n}"
+					"raw": "{\n\t\"title\":\"stri\",\n\t\"desc\":\"asd\"\n}"
 				},
 				"url": {
-					"raw": "{{url}}/api/task/1",
+					"raw": "{{url}}/api/task/2",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"api",
 						"task",
-						"1"
+						"2"
 					]
 				},
 				"description": null
@@ -183,19 +183,41 @@
 					"raw": "{\n\t\n}"
 				},
 				"url": {
-					"raw": "{{url}}/api/task/1",
+					"raw": "{{url}}/api/task/20",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
 						"api",
 						"task",
-						"1"
+						"20"
 					]
 				},
 				"description": null
 			},
 			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "69bc069f-da0d-4119-8898-f99beaa0164c",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "43b77cef-0d16-417d-a701-efa1b02b154b",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
 		}
 	]
 }
