@@ -10,7 +10,8 @@
         "laravel/framework": "5.6.*",
         "laravel/passport": "^6.0",
         "laravel/tinker": "^1.0",
-        "maksi/laravel-idea-type-hinting": "^1.0"
+        "maksi/laravel-idea-type-hinting": "^1.0",
+        "pusher/pusher-php-server": "~3.0"
     },
     "require-dev": {
         "filp/whoops": "^2.0",
