@@ -5,6 +5,7 @@ namespace App\Providers;
 
 use App\Exceptions\NotFoundHttpException;
 use App\Model\Task;
+use App\Model\User;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Router;
@@ -33,6 +34,13 @@ class RouteServiceProvider extends ServiceProvider
                 throw new NotFoundHttpException(Response::HTTP_NOT_FOUND);
             }
         );
+        $router->model(
+            'user',
+            User::class,
+            function () {
+                throw new NotFoundHttpException(Response::HTTP_NOT_FOUND);
+            }
+        );
         
         parent::boot();
     }
@@ -45,6 +53,7 @@ class RouteServiceProvider extends ServiceProvider
     public function map()
     {
         $this->mapApiRoutes();
+        $this->mapOauthRoutes();
     }
     
     /**
@@ -60,5 +69,12 @@ class RouteServiceProvider extends ServiceProvider
             ->middleware('api')
             ->namespace('App\Http\Controllers\Api')
             ->group(base_path('routes/api.php'));
+    }
+    
+    protected function mapOauthRoutes()
+    {
+        Route::prefix('oauth')
+            ->namespace('App\Http\Controllers\Oauth')
+            ->group(base_path('routes/oauth.php'));
     }
 }

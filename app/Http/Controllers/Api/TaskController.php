@@ -3,20 +3,20 @@ declare(strict_types = 1);
 
 namespace App\Http\Controllers\Api;
 
+use App\Http\Controllers\Controller;
 use App\Http\Requests\Task\TaskStoreRequest;
 use App\Http\Requests\Task\TaskUpdateRequest;
 use App\Http\Resources\TaskCollectionResource;
 use App\Http\Resources\TaskResource;
 use App\Model\Task;
 use Illuminate\Http\JsonResponse;
-use Illuminate\Routing\Controller as BaseController;
 
 /**
  * Class TaskController
  *
  * @package App\Http\Controllers\Api
  */
-class TaskController extends BaseController
+class TaskController extends Controller
 {
     /**
      * @return TaskCollectionResource
