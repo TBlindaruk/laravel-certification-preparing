@@ -14,7 +14,7 @@ return [
     */
     
     'defaults' => [
-        'guard'     => 'api',
+        'guard'     => 'web',
         'passwords' => 'users',
     ],
     
@@ -90,6 +90,10 @@ return [
     | they have less time to be guessed. You may change this as needed.
     |
     */
+    'user' => [
+        'driver' => 'session',
+        'provider' => 'users',
+    ],
     
     'passwords' => [
         'users' => [
