@@ -1,0 +1,63 @@
+{
+	"info": {
+		"name": "[example-app] Oauth",
+		"_postman_id": "6d87a96c-6c92-4694-9cce-36bf6888b963",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get Token for client",
+			"request": {
+				"auth": {
+					"type": "oauth1",
+					"oauth1": [
+						{
+							"key": "signatureMethod",
+							"value": "HMAC-SHA1",
+							"type": "string"
+						},
+						{
+							"key": "version",
+							"value": "1.0",
+							"type": "string"
+						},
+						{
+							"key": "addParamsToHeader",
+							"value": false,
+							"type": "boolean"
+						},
+						{
+							"key": "addEmptyParamsToSign",
+							"value": false,
+							"type": "boolean"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"grant_type\":\"client_credentials\",\n    \"client_id\":\"2\",\n    \"client_secret\":\"OHRr6qif0hZsoHE8rzRTSjR4BcJwnojQDzScNqTy\",\n    \"scope\":\"*\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/oauth/token",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"oauth",
+						"token"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		}
+	]
+}

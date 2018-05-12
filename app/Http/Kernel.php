@@ -27,6 +27,9 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $middlewareGroups = [
+        'web' => [
+        
+        ],
         'api' => [
             \App\Http\Middleware\JsonMiddleware::class,
             'throttle:30,1',
@@ -42,7 +45,9 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $routeMiddleware = [
-        'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
-        'bindings' => \Illuminate\Routing\Middleware\SubstituteBindings::class,
+        'auth'        => \Illuminate\Auth\Middleware\Authenticate::class,
+        'auth.client' => \Laravel\Passport\Http\Middleware\CheckClientCredentials::class,
+        'throttle'    => \Illuminate\Routing\Middleware\ThrottleRequests::class,
+        'bindings'    => \Illuminate\Routing\Middleware\SubstituteBindings::class,
     ];
 }
