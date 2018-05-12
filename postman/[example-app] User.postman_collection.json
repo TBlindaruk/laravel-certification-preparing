@@ -1,0 +1,137 @@
+{
+	"info": {
+		"name": "[example-app] User",
+		"_postman_id": "3fbf4cb9-adc1-4950-b3a7-dcfb52134452",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user list",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjFlMGYyNzUwOWM5YWQ3Y2Y4NGE2ZTEzZTdkMDRmMjFmNjIwMTczOTA0MGE0ZmZiYTI2Y2QyMThjNDUwMGQ3ZWE1MGU5ZWI1MDM2ZTE2YjBhIn0.eyJhdWQiOiIyIiwianRpIjoiMWUwZjI3NTA5YzlhZDdjZjg0YTZlMTNlN2QwNGYyMWY2MjAxNzM5MDQwYTRmZmJhMjZjZDIxOGM0NTAwZDdlYTUwZTllYjUwMzZlMTZiMGEiLCJpYXQiOjE1MjYxMjMwNTMsIm5iZiI6MTUyNjEyMzA1MywiZXhwIjoxNTU3NjU5MDUzLCJzdWIiOiIiLCJzY29wZXMiOltdfQ.cks5UFSSHzB_o3fMcKVBvXr6EA3On3QVcmvfANGvszPLqCt-T79WArtD9jRv1m51cAudRG0RbXJbcZXMHgbOj0P9GhjGsT_nWTPUtq0ltxP3wsz7oWkaeYDlXpgVty39UW6VjFZ37o53Kn9IlTu4o92gJl0ok0P1gonSIJKZgZU8REmEla04Xy6z_mqCKTkhsrDvVSJnSz7a489riPcAsGJGjdhSADkheSynduwSuaRnJX7tY1Zm_-98u1Mzk-zBOehDn4RE8EILH1YCMSVmPWyGADKXBGylAc4pxt1ZovBt8P6GrHXc5Wbt8u_T1pnN8jW_XI47MtKC-3n_LXEMIUCq_edCbpNdsATc2b9JOTqBnZuo2t85sPEE_V4W1x_rewvzBiJLpFwRlri_p31RtxD10VXEUUGaeBWXC2QSwwiimZrzhaeuiYz3KUulyk1vamTX5QlQ0j64V32DlNG4OhRhT3-QLNWhvAEcNRN8Mvyp0hxSXDWum833g1CIMBqPuyZoPRYWuLGZSGawBYiPGCy_XexkhgUfc35M7YTrIutnOKDz-2FROWfqxnediMuGidpvCji9fGnwGhmqrXeEAEaSjwnnUu---bJCVyFQaQRfI_SfeYfh8TIGQBHJuuTC50Wg1qK-a3tlruZJbFfx28oDwEemXWbm0RFlhKmzaAM"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Tetiana\",\n        \"email\" : \"t.blindaruk+12asad232d22@gmail.com\",\n        \"password\" : \"1234\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/user",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"user"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "user store",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjFlMGYyNzUwOWM5YWQ3Y2Y4NGE2ZTEzZTdkMDRmMjFmNjIwMTczOTA0MGE0ZmZiYTI2Y2QyMThjNDUwMGQ3ZWE1MGU5ZWI1MDM2ZTE2YjBhIn0.eyJhdWQiOiIyIiwianRpIjoiMWUwZjI3NTA5YzlhZDdjZjg0YTZlMTNlN2QwNGYyMWY2MjAxNzM5MDQwYTRmZmJhMjZjZDIxOGM0NTAwZDdlYTUwZTllYjUwMzZlMTZiMGEiLCJpYXQiOjE1MjYxMjMwNTMsIm5iZiI6MTUyNjEyMzA1MywiZXhwIjoxNTU3NjU5MDUzLCJzdWIiOiIiLCJzY29wZXMiOltdfQ.cks5UFSSHzB_o3fMcKVBvXr6EA3On3QVcmvfANGvszPLqCt-T79WArtD9jRv1m51cAudRG0RbXJbcZXMHgbOj0P9GhjGsT_nWTPUtq0ltxP3wsz7oWkaeYDlXpgVty39UW6VjFZ37o53Kn9IlTu4o92gJl0ok0P1gonSIJKZgZU8REmEla04Xy6z_mqCKTkhsrDvVSJnSz7a489riPcAsGJGjdhSADkheSynduwSuaRnJX7tY1Zm_-98u1Mzk-zBOehDn4RE8EILH1YCMSVmPWyGADKXBGylAc4pxt1ZovBt8P6GrHXc5Wbt8u_T1pnN8jW_XI47MtKC-3n_LXEMIUCq_edCbpNdsATc2b9JOTqBnZuo2t85sPEE_V4W1x_rewvzBiJLpFwRlri_p31RtxD10VXEUUGaeBWXC2QSwwiimZrzhaeuiYz3KUulyk1vamTX5QlQ0j64V32DlNG4OhRhT3-QLNWhvAEcNRN8Mvyp0hxSXDWum833g1CIMBqPuyZoPRYWuLGZSGawBYiPGCy_XexkhgUfc35M7YTrIutnOKDz-2FROWfqxnediMuGidpvCji9fGnwGhmqrXeEAEaSjwnnUu---bJCVyFQaQRfI_SfeYfh8TIGQBHJuuTC50Wg1qK-a3tlruZJbFfx28oDwEemXWbm0RFlhKmzaAM"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Tetiana\",\n        \"email\" : \"t.blindaruk+12asa2d2322d22@gmail.com\",\n        \"password\" : \"1234\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/user",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"user"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		},
+		{
+			"name": "user show",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "addTokenTo",
+							"value": "header",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjFlMGYyNzUwOWM5YWQ3Y2Y4NGE2ZTEzZTdkMDRmMjFmNjIwMTczOTA0MGE0ZmZiYTI2Y2QyMThjNDUwMGQ3ZWE1MGU5ZWI1MDM2ZTE2YjBhIn0.eyJhdWQiOiIyIiwianRpIjoiMWUwZjI3NTA5YzlhZDdjZjg0YTZlMTNlN2QwNGYyMWY2MjAxNzM5MDQwYTRmZmJhMjZjZDIxOGM0NTAwZDdlYTUwZTllYjUwMzZlMTZiMGEiLCJpYXQiOjE1MjYxMjMwNTMsIm5iZiI6MTUyNjEyMzA1MywiZXhwIjoxNTU3NjU5MDUzLCJzdWIiOiIiLCJzY29wZXMiOltdfQ.cks5UFSSHzB_o3fMcKVBvXr6EA3On3QVcmvfANGvszPLqCt-T79WArtD9jRv1m51cAudRG0RbXJbcZXMHgbOj0P9GhjGsT_nWTPUtq0ltxP3wsz7oWkaeYDlXpgVty39UW6VjFZ37o53Kn9IlTu4o92gJl0ok0P1gonSIJKZgZU8REmEla04Xy6z_mqCKTkhsrDvVSJnSz7a489riPcAsGJGjdhSADkheSynduwSuaRnJX7tY1Zm_-98u1Mzk-zBOehDn4RE8EILH1YCMSVmPWyGADKXBGylAc4pxt1ZovBt8P6GrHXc5Wbt8u_T1pnN8jW_XI47MtKC-3n_LXEMIUCq_edCbpNdsATc2b9JOTqBnZuo2t85sPEE_V4W1x_rewvzBiJLpFwRlri_p31RtxD10VXEUUGaeBWXC2QSwwiimZrzhaeuiYz3KUulyk1vamTX5QlQ0j64V32DlNG4OhRhT3-QLNWhvAEcNRN8Mvyp0hxSXDWum833g1CIMBqPuyZoPRYWuLGZSGawBYiPGCy_XexkhgUfc35M7YTrIutnOKDz-2FROWfqxnediMuGidpvCji9fGnwGhmqrXeEAEaSjwnnUu---bJCVyFQaQRfI_SfeYfh8TIGQBHJuuTC50Wg1qK-a3tlruZJbFfx28oDwEemXWbm0RFlhKmzaAM"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"Tetiana\",\n        \"email\" : \"t.blindaruk+12asa2d2322d22@gmail.com\",\n        \"password\" : \"1234\"\n}"
+				},
+				"url": {
+					"raw": "{{url}}/api/user/8",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"user",
+						"8"
+					]
+				},
+				"description": null
+			},
+			"response": []
+		}
+	]
+}

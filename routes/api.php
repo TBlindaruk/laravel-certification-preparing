@@ -12,3 +12,6 @@
 */
 
 Route::apiResource('task', 'TaskController');
+Route::apiResource('user', 'UserController')
+    ->only(['index','store','show'])
+    ->middleware('auth.client');
