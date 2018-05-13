@@ -34,12 +34,12 @@
  - [Dependency Injection](https://laravel.com/docs/5.6/controllers#dependency-injection-and-controllers)
  - [Route Caching](https://laravel.com/docs/5.6/controllers#route-caching)
 
-#### Requests
- - PSR-7 Requests
- - Request Path and Method
- - Retrieving Input
- - Uploaded Files
- - Proxy Configuration
+#### [Requests] (https://laravel.com/docs/5.6/requests)
+ - PSR-7 Requests @todo
+ - Request Path and Method @todo
+ - Retrieving Input @todo
+ - Uploaded Files @todo
+ - Proxy Configuration @todo
 
 #### Responses
  - Attaching Headers / Cookies
