@@ -42,7 +42,7 @@
  - Proxy Configuration @todo
 
 #### Responses
- - Attaching Headers / Cookies
+ - [Attaching Headers / Cookies](./certification/responses/1-attaching-headers-cookies.md)
  - [Encryption](./certification/responses/2-encryption.md)
  - Redirects
  - Flash Data
