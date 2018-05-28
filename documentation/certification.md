@@ -42,7 +42,7 @@
 
 #### Responses
  - Attaching Headers / Cookies
- - Encryption
+ - [Encryption](./certification/responses/2-encryption.md)
  - Redirects
  - Flash Data
  - Response Types
