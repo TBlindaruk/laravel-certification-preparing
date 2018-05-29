@@ -41,7 +41,7 @@
  - Uploaded Files @todo
  - Proxy Configuration @todo
 
-#### Responses
+#### [Responses] (https://laravel.com/docs/5.6/responses) todo (?)
  - [Attaching Headers / Cookies](./certification/responses/1-attaching-headers-cookies.md)
  - [Encryption](./certification/responses/2-encryption.md)
  - Redirects
