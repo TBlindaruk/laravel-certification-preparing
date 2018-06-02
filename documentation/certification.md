@@ -54,12 +54,12 @@
  - Passing Data to Views
  - View Composer
  
- -----------------------
- 
-#### URL Generation
+#### [URL Generation] (https://laravel.com/docs/5.6/urls)
  - Named Routes
  - Controller Actions
  - Default Values
+ 
+  -----------------------
  
 #### Sessions
  - Configuration
