@@ -49,10 +49,12 @@
  - Response Types
  - Response Macros
 
-#### Views
+#### [Views] (https://laravel.com/docs/5.6/views#view-composers)
  - Creating Views
  - Passing Data to Views
  - View Composer
+ 
+ -----------------------
  
 #### URL Generation
  - Named Routes
