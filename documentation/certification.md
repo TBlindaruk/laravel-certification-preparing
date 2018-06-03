@@ -66,20 +66,20 @@
  - Deleting Data
  - Flash Data
  - Custom Drivers
- 
------------------------
 
-#### Validation
+#### [Validation] (https://laravel.com/docs/5.6/validation)
  - Form Requests
  - Manually Creating Validators
  - Error Messages
  - Validation Rules
  - Custom Rules
  
-#### Logging
+#### [Logging] (https://laravel.com/docs/5.6/logging)
  - Configuration
  - Writing to Specific Channels
- - Creating Custom Channels
+ - Creating Custom Channels @todo / @create_test
+ 
+-----------------------
  
 #### Frontend
  - Blade Templating
