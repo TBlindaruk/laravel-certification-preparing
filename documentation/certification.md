@@ -59,15 +59,15 @@
  - Controller Actions
  - Default Values
  
-  -----------------------
- 
-#### Sessions
+#### [Sessions] (https://laravel.com/docs/5.6/session)
  - Configuration
  - Storing Data
  - Retrieving Data
  - Deleting Data
  - Flash Data
  - Custom Drivers
+ 
+-----------------------
 
 #### Validation
  - Form Requests
