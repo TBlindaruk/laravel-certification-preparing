@@ -34,14 +34,14 @@
  - [Dependency Injection](https://laravel.com/docs/5.6/controllers#dependency-injection-and-controllers)
  - [Route Caching](https://laravel.com/docs/5.6/controllers#route-caching)
 
-#### [Requests] (https://laravel.com/docs/5.6/requests)
+#### [Requests](https://laravel.com/docs/5.6/requests)
  - PSR-7 Requests @todo
  - Request Path and Method @todo
  - Retrieving Input @todo
  - Uploaded Files @todo
  - Proxy Configuration @todo
 
-#### [Responses] (https://laravel.com/docs/5.6/responses) todo (?)
+#### [Responses](https://laravel.com/docs/5.6/responses) todo (?)
  - [Attaching Headers / Cookies](./certification/responses/1-attaching-headers-cookies.md)
  - [Encryption](./certification/responses/2-encryption.md)
  - Redirects
@@ -49,17 +49,17 @@
  - Response Types
  - Response Macros
 
-#### [Views] (https://laravel.com/docs/5.6/views#view-composers)
+#### [Views](https://laravel.com/docs/5.6/views#view-composers)
  - Creating Views
  - Passing Data to Views
  - View Composer
  
-#### [URL Generation] (https://laravel.com/docs/5.6/urls)
+#### [URL Generation](https://laravel.com/docs/5.6/urls)
  - Named Routes
  - Controller Actions
  - Default Values
  
-#### [Sessions] (https://laravel.com/docs/5.6/session)
+#### [Sessions](https://laravel.com/docs/5.6/session)
  - Configuration
  - Storing Data
  - Retrieving Data
@@ -67,14 +67,14 @@
  - Flash Data
  - Custom Drivers
 
-#### [Validation] (https://laravel.com/docs/5.6/validation)
+#### [Validation](https://laravel.com/docs/5.6/validation)
  - Form Requests
  - Manually Creating Validators
  - Error Messages
  - Validation Rules
  - Custom Rules
  
-#### [Logging] (https://laravel.com/docs/5.6/logging)
+#### [Logging](https://laravel.com/docs/5.6/logging)
  - Configuration
  - Writing to Specific Channels
  - Creating Custom Channels @todo / @create_test
@@ -84,10 +84,9 @@
  - Localization @TODO
  - Asset Compilation @TODO
  
------------------------
- 
 #### Security
- - Authentication
+ - [Authentication](https://laravel.com/docs/5.6/authentication)
+-----------------------
  - Authorization
  - Encryption / Hashing
  - CSRF Protection
