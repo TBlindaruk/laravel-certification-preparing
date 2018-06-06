@@ -86,11 +86,10 @@
  
 #### Security
  - [Authentication](https://laravel.com/docs/5.6/authentication)
------------------------
- - Authorization
- - Encryption / Hashing
- - CSRF Protection
- - XSS Protection
+1. - Authorization
+2. - Encryption / Hashing
+3. - CSRF Protection
+4. - XSS Protection
  
 #### [Artisan Console](https://laravel.com/docs/5.6/artisan)
  - Generating Commands
@@ -105,12 +104,14 @@
  - Presence Channels
  - Client Events
 
-#### Caching
+#### [Caching](https://laravel.com/docs/5.6/cache)
  - Drivers / Configuration
  - Storing Items
  - Retrieving Items
  - Cache Tags
  - Creating Custom Drivers
+ 
+-----------------------
  
 #### Collections
  - Creating / Extending Collections
