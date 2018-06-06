@@ -79,12 +79,12 @@
  - Writing to Specific Channels
  - Creating Custom Channels @todo / @create_test
  
------------------------
+#### Frontend @TODO
+ - Blade Templating @TODO
+ - Localization @TODO
+ - Asset Compilation @TODO
  
-#### Frontend
- - Blade Templating
- - Localization
- - Asset Compilation
+-----------------------
  
 #### Security
  - Authentication
