@@ -111,12 +111,12 @@
  - Cache Tags
  - Creating Custom Drivers
  
------------------------
- 
-#### Collections
+#### [Collections](https://laravel.com/docs/5.6/collections)
  - Creating / Extending Collections
  - Collection Methods
  - Higher-order Messages
+ 
+-----------------------
  
 #### Events
  - Registering Events / Listeners
