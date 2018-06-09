@@ -3,8 +3,10 @@ declare(strict_types = 1);
 
 namespace App\Providers;
 
-use Illuminate\Support\ServiceProvider;
+use App\Model\ModelFactory;
+use Illuminate\Contracts\Container\Container;
 use Illuminate\Support\Facades\Schema;
+use Illuminate\Support\ServiceProvider;
 
 /**
  * Class AppServiceProvider
@@ -30,6 +32,18 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->registerModelFactory();
+    }
+    
+    /**
+     * @see ModelFactory
+     */
+    private function registerModelFactory()
+    {
+        $this->app->singleton(ModelFactory::class, function () {
+            return new ModelFactory(
+                $this->app->make(Container::class)
+            );
+        });
     }
 }

@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\Api\UserCreateRequest;
 use App\Http\Resources\Api\UserResource;
 use App\Model\User;
+use App\User\CreateCommand;
 
 /**
  * Class UserController
@@ -30,11 +31,9 @@ class UserController extends Controller
      */
     public function store(UserCreateRequest $request)
     {
-        $user = new User($request->only(['name', 'password', 'email']));
-        $user->save();
-        $user->createToken('App');
+        $command = new CreateCommand($request->name, $request->password, $request->email);
         
-        return new UserResource($user);
+        return new UserResource($command->execute());
     }
     
     /**
