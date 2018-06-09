@@ -64,4 +64,12 @@ class MessageSent implements ShouldBroadcast
     {
         return $this->message->message !== 'No';
     }
+    
+    /**
+     * @return string
+     */
+    public function broadcastAs(): string
+    {
+        return 'message.created';
+    }
 }
