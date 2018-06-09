@@ -116,13 +116,13 @@
  - Collection Methods
  - Higher-order Messages
  
------------------------
- 
-#### Events
+#### [Events](https://laravel.com/docs/5.6/events)
  - Registering Events / Listeners
  - Queued Listeners
  - Dispatching Events
  - Subscribing to Events
+ 
+-----------------------
  
 #### File Storage
  - Configuration / Drivers
