@@ -122,19 +122,19 @@
  - Dispatching Events
  - Subscribing to Events
  
------------------------
- 
 #### File Storage
- - Configuration / Drivers
- - Storing / Retrieving Files
- - Custom Filesystems
+5. - Configuration / Drivers
+6. - Storing / Retrieving Files
+7. - Custom Filesystems
  
-#### Helper Methods
+#### [Helper Methods](https://laravel.com/docs/5.6/helpers)
  - Arrays / Objects
  - Paths
  - Strings
  - URLs
  - Misc
+ 
+-----------------------
  
 #### Mail
  - Drivers / Configuration
