@@ -96,7 +96,7 @@
  - Registering Commands
  - Executing Commands
  
-#### Websockets
+#### [Websockets](https://laravel.com/docs/5.6/broadcasting)
  - Broadcasting Events
  - Receiving Events
  - Broadcasting Channels
