@@ -10,7 +10,6 @@ use Illuminate\Broadcasting\InteractsWithSockets;
 use Illuminate\Broadcasting\PrivateChannel;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use Illuminate\Foundation\Events\Dispatchable;
-use Illuminate\Queue\SerializesModels;
 
 /**
  * Class MessageSent
@@ -19,21 +18,21 @@ use Illuminate\Queue\SerializesModels;
  */
 class MessageSent implements ShouldBroadcast
 {
-    use Dispatchable, InteractsWithSockets, SerializesModels;
+    use Dispatchable, InteractsWithSockets;
     
     /**
      * User that sent the message
      *
      * @var User
      */
-    public $user;
+    private $user;
     
     /**
      * Message details
      *
      * @var Message
      */
-    public $message;
+    private $message;
     
     /**
      * MessageSent constructor.
@@ -71,5 +70,20 @@ class MessageSent implements ShouldBroadcast
     public function broadcastAs(): string
     {
         return 'message.created';
+    }
+    
+    /**
+     * @return array
+     */
+    public function broadcastWith(): array
+    {
+        return [
+            'user' => [
+                'name' => $this->user->name,
+            ],
+            'message' => [
+                'message' => $this->message->message,
+            ],
+        ];
     }
 }
