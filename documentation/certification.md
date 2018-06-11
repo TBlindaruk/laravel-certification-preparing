@@ -134,17 +134,15 @@
  - URLs
  - Misc
  
------------------------
- 
 #### Mail
- - Drivers / Configuration
- - Generating Mailables
- - Writing Mail
- - Sending Mail
- - Markdown
- - Local Development
+8. - Drivers / Configuration
+9. - Generating Mailables
+10. - Writing Mail
+11. - Sending Mail
+12. - Markdown
+13. - Local Development
  
-#### Notifications
+#### [Notifications](https://laravel.com/docs/5.6/notifications)
  - Creating Notifications
  - Sending Notifications
  - Mail Notifications
@@ -154,6 +152,8 @@
  - SMS Notifications
  - Slack Notifications
  - Custom Channels
+ 
+-----------------------
  
 #### Package Development
  - Discovery
