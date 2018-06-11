@@ -153,15 +153,15 @@
  - Slack Notifications
  - Custom Channels
  
------------------------
- 
-#### Package Development
+#### [Package Development](https://laravel.com/docs/5.6/packages)
  - Discovery
  - Service Providers
  - Resources
  - Commands
  - Assets
  - Publishing File Groups
+ 
+------------------------
  
 #### Queues
  - Drivers / Configurations
