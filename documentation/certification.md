@@ -161,14 +161,14 @@
  - Assets
  - Publishing File Groups
  
-------------------------
- 
-#### Queues
+#### [Queues](https://laravel.com/docs/5.6/queues)
  - Drivers / Configurations
  - Creating / Dispatching Jobs
  - Running Queue Workers
  - Supervisor
  - Handling Failed Jobs
+
+------------------------
  
 #### Task Scheduling
  - Scheduling Artisan Commands
