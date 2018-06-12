@@ -167,16 +167,16 @@
  - Running Queue Workers
  - Supervisor
  - Handling Failed Jobs
-
-------------------------
  
-#### Task Scheduling
+#### [Task Scheduling](https://laravel.com/docs/5.6/scheduling)
  - Scheduling Artisan Commands
  - Scheduling Queue Jobs
  - Scheduling Shell Commands
  - Time Zones
  - Preventing Task Overlaps
  - Maintenance Mode
+ 
+------------------------
  
 #### Database
  - Query Builder
