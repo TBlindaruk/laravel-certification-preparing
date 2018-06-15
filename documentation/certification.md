@@ -176,17 +176,18 @@
  - Preventing Task Overlaps
  - Maintenance Mode
  
-------------------------
- 
 #### Database
- - Query Builder
- - Pagination
- - Migrations
- - Seeding
+14. - Query Builder
+15. - Pagination
+16. - Migrations
+17. - Seeding
  
 #### Eloquent ORM
- - Conventions
- - Relationships
+ - [Conventions](https://laravel.com/docs/5.6/eloquent)
+ - [Relationships](https://laravel.com/docs/5.6/eloquent-relationships)
+ 
+------------------------
+
  - Eloquent Collections
  - Mutators / Accessors
  - API Resources
