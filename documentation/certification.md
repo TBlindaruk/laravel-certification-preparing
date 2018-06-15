@@ -185,10 +185,10 @@
 #### Eloquent ORM
  - [Conventions](https://laravel.com/docs/5.6/eloquent)
  - [Relationships](https://laravel.com/docs/5.6/eloquent-relationships)
+ - [Eloquent Collections](https://laravel.com/docs/5.6/eloquent-collections)
  
 ------------------------
 
- - Eloquent Collections
  - Mutators / Accessors
  - API Resources
  - Serialization
