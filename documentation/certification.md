@@ -188,11 +188,10 @@
  - [Eloquent Collections](https://laravel.com/docs/5.6/eloquent-collections)
  - [Mutators / Accessors](https://laravel.com/docs/5.6/eloquent-mutators)
  - [API Resources](https://laravel.com/docs/5.6/eloquent-resources)
- 
-------------------------
-
- - Serialization
+ - [Serialization](https://laravel.com/docs/5.6/eloquent-serialization)
  - Scopes
+
+------------------------
 
 #### Testing
  - Creating / Running Tests
