@@ -187,10 +187,10 @@
  - [Relationships](https://laravel.com/docs/5.6/eloquent-relationships)
  - [Eloquent Collections](https://laravel.com/docs/5.6/eloquent-collections)
  - [Mutators / Accessors](https://laravel.com/docs/5.6/eloquent-mutators)
+ - [API Resources](https://laravel.com/docs/5.6/eloquent-resources)
  
 ------------------------
 
- - API Resources
  - Serialization
  - Scopes
 
