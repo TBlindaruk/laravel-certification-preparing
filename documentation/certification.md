@@ -195,7 +195,7 @@
 
 #### Testing
  - Creating / Running Tests
- - HTTP Tests
+ - [HTTP Tests](https://laravel.com/docs/5.6/http-tests)
  - Session / Authentication
  - Testing File Uploads
  - Available Assertions
