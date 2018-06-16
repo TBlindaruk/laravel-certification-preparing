@@ -180,7 +180,7 @@
  - [Query Builder](https://laravel.com/docs/5.6/queries)
  - [Pagination](https://laravel.com/docs/5.6/pagination)
  - [Migrations](https://laravel.com/docs/5.6/migrations)
-17. - Seeding
+ - [Seeding](https://laravel.com/docs/5.6/seeding)
  
 #### Eloquent ORM
  - [Conventions](https://laravel.com/docs/5.6/eloquent)
