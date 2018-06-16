@@ -177,7 +177,7 @@
  - Maintenance Mode
  
 #### Database
-14. - Query Builder
+ - [Query Builder](https://laravel.com/docs/5.6/queries)
 15. - Pagination
 16. - Migrations
 17. - Seeding
