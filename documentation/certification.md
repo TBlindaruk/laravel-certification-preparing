@@ -191,11 +191,9 @@
  - [Serialization](https://laravel.com/docs/5.6/eloquent-serialization)
  - Scopes
 
-------------------------
-
-#### Testing
+#### [Testing](https://laravel.com/docs/5.6/testing)
  - Creating / Running Tests
- - [HTTP Tests](https://laravel.com/docs/5.6/http-tests)
+ - HTTP Tests
  - Session / Authentication
  - Testing File Uploads
  - Available Assertions
