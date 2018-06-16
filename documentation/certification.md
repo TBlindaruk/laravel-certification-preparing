@@ -178,7 +178,7 @@
  
 #### Database
  - [Query Builder](https://laravel.com/docs/5.6/queries)
-15. - Pagination
+ - [Pagination](https://laravel.com/docs/5.6/pagination)
 16. - Migrations
 17. - Seeding
  
