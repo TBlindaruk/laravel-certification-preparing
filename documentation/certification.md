@@ -179,7 +179,7 @@
 #### Database
  - [Query Builder](https://laravel.com/docs/5.6/queries)
  - [Pagination](https://laravel.com/docs/5.6/pagination)
-16. - Migrations
+ - [Migrations](https://laravel.com/docs/5.6/migrations)
 17. - Seeding
  
 #### Eloquent ORM
