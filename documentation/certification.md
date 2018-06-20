@@ -87,7 +87,7 @@
 #### Security
  - [Authentication](https://laravel.com/docs/5.6/authentication)
  - [Authorization](https://laravel.com/docs/5.6/authorization)
-2. - Encryption / Hashing
+ - [Encryption / Hashing](https://laravel.com/docs/5.6/encryption)
 3. - CSRF Protection
 4. - XSS Protection
  
