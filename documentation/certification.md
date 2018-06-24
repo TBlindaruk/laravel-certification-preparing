@@ -134,13 +134,13 @@
  - URLs
  - Misc
  
-#### Mail
-8. - Drivers / Configuration
-9. - Generating Mailables
-10. - Writing Mail
-11. - Sending Mail
-12. - Markdown
-13. - Local Development
+#### [Mail](https://laravel.com/docs/5.6/mail)
+ - Drivers / Configuration
+ - Generating Mailables
+ - Writing Mail
+ - Sending Mail
+ - Markdown
+ - Local Development
  
 #### [Notifications](https://laravel.com/docs/5.6/notifications)
  - Creating Notifications
