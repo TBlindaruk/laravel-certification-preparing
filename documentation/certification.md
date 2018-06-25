@@ -6,59 +6,60 @@
  - Autoloading Standards
 
 #### Architecture
- - Request Lifecycle
- - Service Container Binding and Resolution
- - Service Providers
- - Facades
+ - [Request Lifecycle](./certification/architecture/1-request-lifecycle.md)
+ - [Service Container Binding and Resolution](./certification/architecture/2-service-container-binding-and-resolution.md)
+ - [Service Providers](./certification/architecture/3-service-providers.md)
+ - [Facades](./certification/architecture/4-facades.md)
  - HTTP Verbs
 
 #### Routing
- - Redirects
- - Route Parameters
- - Named Routes
+ - [Redirects](./certification/routing/1-redirects.md) `@need_practice` 
+ - [Route Parameters](./certification/routing/2-route-parameters.md)
+ - [Named Routes](./certification/routing/3-named-routes.md) `@need_repeat`
  - [Route Groups](./certification/routing/4-route-groups.md)
- - Route Model Binding
- - [Rate Limiting](./routing/6-rate-limiting.md)
+ - [Route Model Binding](./certification/routing/5-route-model-binding.md)
+ - [Rate Limiting](./certification/routing/6-rate-limiting.md)
 
-#### Middleware
+#### [Middleware](https://laravel.com/docs/5.6/middleware) @todo_terminable_middleware
  - Defining / Registering Middleware
  - Middleware Parameters
  
 #### Controllers
- - Defining Controllers
- - Controller Namespacing
- - Single Action Controllers
- - Middleware
- - Resource Controllers
- - Dependency Injection
- - Route Caching
+ - [Basic Controllers](https://laravel.com/docs/5.6/controllers#basic-controllers)
+    - Defining Controllers
+    - Controller Namespacing
+    - Single Action Controllers
+ - [Middleware](https://laravel.com/docs/5.6/controllers#controller-middleware)
+ - [Resource Controllers](https://laravel.com/docs/5.6/controllers#resource-controllers)
+ - [Dependency Injection](https://laravel.com/docs/5.6/controllers#dependency-injection-and-controllers)
+ - [Route Caching](https://laravel.com/docs/5.6/controllers#route-caching)
 
-#### Requests
- - PSR-7 Requests
- - Request Path and Method
- - Retrieving Input
- - Uploaded Files
- - Proxy Configuration
+#### [Requests](https://laravel.com/docs/5.6/requests)
+ - PSR-7 Requests @todo
+ - Request Path and Method @todo
+ - Retrieving Input @todo
+ - Uploaded Files @todo
+ - Proxy Configuration @todo
 
-#### Responses
- - Attaching Headers / Cookies
+#### [Responses](https://laravel.com/docs/5.6/responses) todo (?)
+ - [Attaching Headers / Cookies](./certification/responses/1-attaching-headers-cookies.md)
  - [Encryption](./certification/responses/2-encryption.md)
  - Redirects
  - Flash Data
  - Response Types
  - Response Macros
 
-#### Views
+#### [Views](https://laravel.com/docs/5.6/views#view-composers)
  - Creating Views
  - Passing Data to Views
  - View Composer
  
-#### URL Generation
+#### [URL Generation](https://laravel.com/docs/5.6/urls)
  - Named Routes
  - Controller Actions
  - Default Values
  
-#### Sessions
+#### [Sessions](https://laravel.com/docs/5.6/session)
  - Configuration
  - Storing Data
  - Retrieving Data
@@ -66,29 +67,29 @@
  - Flash Data
  - Custom Drivers
 
-#### Validation
+#### [Validation](https://laravel.com/docs/5.6/validation)
  - Form Requests
  - Manually Creating Validators
  - Error Messages
  - Validation Rules
  - Custom Rules
  
-#### Logging
+#### [Logging](https://laravel.com/docs/5.6/logging)
  - Configuration
  - Writing to Specific Channels
- - Creating Custom Channels
+ - Creating Custom Channels @todo / @create_test
  
-#### Frontend
- - Blade Templating
- - Localization
- - Asset Compilation
+#### Frontend @TODO
+ - Blade Templating @TODO
+ - Localization @TODO
+ - Asset Compilation @TODO
  
 #### Security
- - Authentication
- - Authorization
- - Encryption / Hashing
- - CSRF Protection
- - XSS Protection
+ - [Authentication](https://laravel.com/docs/5.6/authentication)
+ - [Authorization](https://laravel.com/docs/5.6/authorization)
+ - [Encryption / Hashing](https://laravel.com/docs/5.6/encryption)
+3. - CSRF Protection
+4. - XSS Protection
  
 #### [Artisan Console](https://laravel.com/docs/5.6/artisan)
  - Generating Commands
@@ -103,37 +104,37 @@
  - Presence Channels
  - Client Events
 
-#### Caching
+#### [Caching](https://laravel.com/docs/5.6/cache)
  - Drivers / Configuration
  - Storing Items
  - Retrieving Items
  - Cache Tags
  - Creating Custom Drivers
  
-#### Collections
+#### [Collections](https://laravel.com/docs/5.6/collections)
  - Creating / Extending Collections
  - Collection Methods
  - Higher-order Messages
  
-#### Events
+#### [Events](https://laravel.com/docs/5.6/events)
  - Registering Events / Listeners
  - Queued Listeners
  - Dispatching Events
  - Subscribing to Events
  
 #### File Storage
- - Configuration / Drivers
- - Storing / Retrieving Files
- - Custom Filesystems
+5. - Configuration / Drivers
+6. - Storing / Retrieving Files
+7. - Custom Filesystems
  
-#### Helper Methods
+#### [Helper Methods](https://laravel.com/docs/5.6/helpers)
  - Arrays / Objects
  - Paths
  - Strings
  - URLs
  - Misc
  
-#### Mail
+#### [Mail](https://laravel.com/docs/5.6/mail)
  - Drivers / Configuration
  - Generating Mailables
  - Writing Mail
@@ -141,7 +142,7 @@
  - Markdown
  - Local Development
  
-#### Notifications
+#### [Notifications](https://laravel.com/docs/5.6/notifications)
  - Creating Notifications
  - Sending Notifications
  - Mail Notifications
@@ -152,7 +153,7 @@
  - Slack Notifications
  - Custom Channels
  
-#### Package Development
+#### [Package Development](https://laravel.com/docs/5.6/packages)
  - Discovery
  - Service Providers
  - Resources
@@ -160,14 +161,14 @@
  - Assets
  - Publishing File Groups
  
-#### Queues
+#### [Queues](https://laravel.com/docs/5.6/queues)
  - Drivers / Configurations
  - Creating / Dispatching Jobs
  - Running Queue Workers
  - Supervisor
  - Handling Failed Jobs
  
-#### Task Scheduling
+#### [Task Scheduling](https://laravel.com/docs/5.6/scheduling)
  - Scheduling Artisan Commands
  - Scheduling Queue Jobs
  - Scheduling Shell Commands
@@ -176,21 +177,21 @@
  - Maintenance Mode
  
 #### Database
- - Query Builder
- - Pagination
- - Migrations
- - Seeding
+ - [Query Builder](https://laravel.com/docs/5.6/queries)
+ - [Pagination](https://laravel.com/docs/5.6/pagination)
+ - [Migrations](https://laravel.com/docs/5.6/migrations)
+ - [Seeding](https://laravel.com/docs/5.6/seeding)
  
 #### Eloquent ORM
- - Conventions
- - Relationships
- - Eloquent Collections
- - Mutators / Accessors
- - API Resources
- - Serialization
+ - [Conventions](https://laravel.com/docs/5.6/eloquent)
+ - [Relationships](https://laravel.com/docs/5.6/eloquent-relationships)
+ - [Eloquent Collections](https://laravel.com/docs/5.6/eloquent-collections)
+ - [Mutators / Accessors](https://laravel.com/docs/5.6/eloquent-mutators)
+ - [API Resources](https://laravel.com/docs/5.6/eloquent-resources)
+ - [Serialization](https://laravel.com/docs/5.6/eloquent-serialization)
  - Scopes
 
-#### Testing
+#### [Testing](https://laravel.com/docs/5.6/testing)
  - Creating / Running Tests
  - HTTP Tests
  - Session / Authentication
@@ -200,3 +201,7 @@
  - Data Factories
  - Fakes / Mocking
  
+ 
+# Result
+
+https://exam.laravelcert.com/is/tetiana-blindaruk/certified-since/2018-06-25?
