@@ -4,11 +4,11 @@
 
 ### Project run 
 ```
-$ docker-domposer up -d
+$ docker-compose up -d
 ```
 ### Status check
 ```
-$ docker-domposer ps
+$ docker-compose ps
 ```
 
 ### Log in to container
