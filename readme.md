@@ -35,6 +35,6 @@ $ php artisan config:clear
 ```
 
 ## Certification question
-https://laravel.com/certification/prepare/
+https://certification.laravel.com/prepare/
 
 [certification topics with explanation](./documentation/certification.md)
